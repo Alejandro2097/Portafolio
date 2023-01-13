@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import forme from "../../Assets/Projects/Forme.png";
 import maps from "../../Assets/Projects/Mapas.png";
+import todo from "../../Assets/Projects/Todoapp.PNG";
 import Fisio from "../../Assets/Projects/Fisiomax.png";
 import CuidaTusOjos from "../../Assets/Projects/Cuidatusojos.png";
 import resuelve from "../../Assets/Projects/ResuelveConBimbo.png";
@@ -23,7 +24,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={maps}
+              imgPath={todo}
               isBlog={false}
               title="To do App"
               description="To do app implementing Redux with Angular an Ngrx, if you have the redux chrome extencion
