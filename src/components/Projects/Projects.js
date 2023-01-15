@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import forme from "../../Assets/Projects/Forme.png";
 import maps from "../../Assets/Projects/Mapas.png";
 import todo from "../../Assets/Projects/Todoapp.PNG";
+import halo from "../../Assets/Projects/HaloInfiniteWeb.PNG";
 import Fisio from "../../Assets/Projects/Fisiomax.png";
 import CuidaTusOjos from "../../Assets/Projects/Cuidatusojos.png";
 import resuelve from "../../Assets/Projects/ResuelveConBimbo.png";
@@ -22,6 +23,17 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={halo}
+              isBlog={false}
+              title="Halo infinite landing page"
+              description="The implementation of this project is in HTML5 CSS and vanilla javascript, whit vite we generate the build folder to render de website in githug pages.
+              The website is responsive and respond to the dark mode or ligth mode in your computer you can see the live demo in the next link."
+              ghLink="https://github.com/Alejandro2097/HaloInfiniteWeb"
+              demoLink="https://alejandro2097.github.io/HaloInfiniteWeb/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={todo}
