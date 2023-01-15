@@ -5,7 +5,7 @@ import Particle from "../Particle";
 import forme from "../../Assets/Projects/Forme.png";
 import maps from "../../Assets/Projects/Mapas.png";
 import todo from "../../Assets/Projects/Todoapp.PNG";
-import halo from "../../Assets/Projects/HaloInfiniteWeb.PNG";
+import halo from "../../Assets/Projects/haloreadme.PNG";
 import Fisio from "../../Assets/Projects/Fisiomax.png";
 import CuidaTusOjos from "../../Assets/Projects/Cuidatusojos.png";
 import resuelve from "../../Assets/Projects/ResuelveConBimbo.png";
