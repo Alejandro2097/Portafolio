@@ -34,17 +34,7 @@ function Projects() {
               demoLink="https://alejandro2097.github.io/HaloInfiniteWeb/"
             />
           </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={todo}
-              isBlog={false}
-              title="To do App"
-              description="To do app implementing Redux with Angular an Ngrx, if you have the redux chrome extencion
-              you can preview the redux time line, in this application you can track your daily routine."
-              ghLink="https://github.com/Alejandro2097/Redux-TODO-app"
-              demoLink="https://alejandro2097.github.io/Redux-TODO-app/"
-            />
-          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={maps}
