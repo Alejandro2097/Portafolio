@@ -1,15 +1,16 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
-import forme from "../../Assets/Projects/Forme.png";
-import maps from "../../Assets/Projects/Mapas.png";
-import todo from "../../Assets/Projects/Todoapp.PNG";
-import halo from "../../Assets/Projects/haloreadme.PNG";
-import Fisio from "../../Assets/Projects/Fisiomax.png";
+import { Col, Container, Row } from "react-bootstrap";
+
+import reddit from "../../Assets/Projects/Capture.PNG";
 import CuidaTusOjos from "../../Assets/Projects/Cuidatusojos.png";
-import resuelve from "../../Assets/Projects/ResuelveConBimbo.png";
+import Fisio from "../../Assets/Projects/Fisiomax.png";
+import forme from "../../Assets/Projects/Forme.png";
+import halo from "../../Assets/Projects/haloreadme.PNG";
+import maps from "../../Assets/Projects/Mapas.png";
 import onoda from "../../Assets/Projects/Onoda.png";
+import resuelve from "../../Assets/Projects/ResuelveConBimbo.png";
+import Particle from "../Particle";
+import ProjectCard from "./ProjectCards";
 
 function Projects() {
   return (
@@ -23,6 +24,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={reddit}
+              isBlog={false}
+              title="Reddit Clone"
+              description="project that I developed while following one of the courses on freeCodeCamp. It is an incredible platform that offers ample opportunities to learn about software engineering. Through this project, I gained significant knowledge about various technologies such as React, Chakra UI, and Firebase"
+              ghLink="https://reddit-clone-kappa-teal.vercel.app/"
+              demoLink="https://github.com/Alejandro2097/Reddit-Clone"
+            />
+          </Col>
         <Col md={4} className="project-card">
             <ProjectCard
               imgPath={halo}
