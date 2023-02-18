@@ -30,8 +30,8 @@ function Projects() {
               isBlog={false}
               title="Reddit Clone"
               description="project that I developed while following one of the courses on freeCodeCamp. It is an incredible platform that offers ample opportunities to learn about software engineering. Through this project, I gained significant knowledge about various technologies such as React, Chakra UI, and Firebase"
-              ghLink="https://reddit-clone-kappa-teal.vercel.app/"
-              demoLink="https://github.com/Alejandro2097/Reddit-Clone"
+              ghLink="https://github.com/Alejandro2097/Reddit-Clone"
+              demoLink="https://reddit-clone-kappa-teal.vercel.app/e"
             />
           </Col>
         <Col md={4} className="project-card">
