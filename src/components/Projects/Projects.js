@@ -29,7 +29,7 @@ function Projects() {
               imgPath={reddit}
               isBlog={false}
               title="Reddit Clone"
-              description="project that I developed while following one of the courses on freeCodeCamp. It is an incredible platform that offers ample opportunities to learn about software engineering. Through this project, I gained significant knowledge about various technologies such as React, Chakra UI, and Firebase"
+              description="Project that I developed while following one of the courses on freeCodeCamp. Through this project, I gained significant knowledge about various technologies such as React, Chakra UI, and Firebase"
               ghLink="https://github.com/Alejandro2097/Reddit-Clone"
               demoLink="https://reddit-clone-kappa-teal.vercel.app/e"
             />
