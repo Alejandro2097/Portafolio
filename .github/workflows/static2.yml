@@ -1,0 +1,49 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: ["main", "master"]  # Ajusta a tu rama principal
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Clean previous build
+        run: |
+          rm -rf public/  # Elimina la carpeta conflictiva
+          rm -rf dist/    # Alternativa si usas dist/
+          rm -rf node_modules/  # Opcional: limpia dependencias
+
+      - name: Install dependencies
+        run: npm install  # o yarn install
+
+      - name: Build project
+        run: npm run build  # Ajusta al comando de tu proyecto (ej: "vite build")
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'dist/'  # Cambia a 'public/' o 'build/' según tu proyecto
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
